@@ -1,0 +1,115 @@
+{
+  "@context" : {
+    "onlyChild" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#onlyChild"
+    },
+    "Wife" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Wife"
+    },
+    "hasSibling" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSibling",
+      "@type" : "@id"
+    },
+    "daughter" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#daughter"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "immature" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#immature"
+    },
+    "hasHusband" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasHusband",
+      "@type" : "@id"
+    },
+    "hasParent" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasParent",
+      "@type" : "@id"
+    },
+    "hasFather" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasFather",
+      "@type" : "@id"
+    },
+    "child" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child"
+    },
+    "father" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#father"
+    },
+    "hasAddress" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "parent" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#parent"
+    },
+    "gen" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#gen"
+    },
+    "mother" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#mother"
+    },
+    "hasCreditCard" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasCreditCard",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasAge" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAge"
+    },
+    "hasGender" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasGender",
+      "@type" : "@id"
+    },
+    "hasMother" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasMother",
+      "@type" : "@id"
+    },
+    "person" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+    },
+    "hasBrother" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasBrother",
+      "@type" : "@id"
+    },
+    "hasWife" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasWife",
+      "@type" : "@id"
+    },
+    "hasSister" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSister",
+      "@type" : "@id"
+    },
+    "Mature" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Mature"
+    },
+    "birthDate" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#birthDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "husband" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#husband"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasSon" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSon",
+      "@type" : "@id"
+    },
+    "son" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#son"
+    },
+    "hasChild" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasChild",
+      "@type" : "@id"
+    },
+    "hasDaughter" : {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasDaughter",
+      "@type" : "@id"
+    }
+  }
+}
