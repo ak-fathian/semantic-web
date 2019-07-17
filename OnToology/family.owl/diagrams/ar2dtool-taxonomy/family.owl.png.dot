@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "untitled-ontology-4:immature" "untitled-ontology-4:onlyChild" "untitled-ontology-4:child" "untitled-ontology-4:Mature" "untitled-ontology-4:mother" "untitled-ontology-4:son" "untitled-ontology-4:person" "untitled-ontology-4:Wife" "untitled-ontology-4:father" "-2c2c6922:16c00edea33:-7fdd" "untitled-ontology-4:husband" "untitled-ontology-4:daughter" "untitled-ontology-4:parent" ; /*classes style*/
+	"untitled-ontology-4:mother" -> "untitled-ontology-4:parent" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:son" -> "untitled-ontology-4:child" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:person" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:parent" -> "untitled-ontology-4:person" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:husband" -> "-2c2c6922:16c00edea33:-7fdd" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:husband" -> "untitled-ontology-4:person" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:Mature" -> "untitled-ontology-4:person" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:daughter" -> "untitled-ontology-4:child" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:child" -> "untitled-ontology-4:person" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:immature" -> "untitled-ontology-4:person" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:Wife" -> "untitled-ontology-4:person" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:father" -> "untitled-ontology-4:parent" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-4:onlyChild" -> "untitled-ontology-4:child" [ label = "rdfs:subClassOf" ];
+
+}
