@@ -1,0 +1,358 @@
+@prefix : <http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4> .
+
+<http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasBrother
+:hasBrother rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :hasSibling .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasChild
+:hasChild rdf:type owl:ObjectProperty ;
+          owl:inverseOf :hasParent .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasDaughter
+:hasDaughter rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :hasChild .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasFather
+:hasFather rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasParent ;
+           rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasGen
+:hasGen rdf:type owl:ObjectProperty ;
+        rdfs:domain :person ;
+        rdfs:range :gen .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasHusband
+:hasHusband rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasMother
+:hasMother rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasParent ;
+           rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasParent
+:hasParent rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSibling
+:hasSibling rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSister
+:hasSister rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :hasSibling ;
+           owl:inverseOf :hasBrother .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSon
+:hasSon rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :hasChild .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasWife
+:hasWife rdf:type owl:ObjectProperty ;
+         owl:inverseOf :hasHusband ;
+         rdf:type owl:SymmetricProperty ;
+         rdfs:domain :parent ;
+         rdfs:range :parent .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#birthDate
+:birthDate rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :person ;
+           rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAddress
+:hasAddress rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :person ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAge
+:hasAge rdf:type owl:DatatypeProperty ;
+        rdfs:domain :person ;
+        rdfs:range xsd:int ,
+                   xsd:integer .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasCreditCard
+:hasCreditCard rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :person ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "دارای کارت بانکی" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Mature
+:Mature rdf:type owl:Class ;
+        rdfs:subClassOf :person ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasAge ;
+                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:int ;
+                                               owl:withRestrictions ( [ xsd:minInclusive 18
+                                                                      ]
+                                                                    )
+                                             ]
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasAge ;
+                          owl:minCardinality "18"^^xsd:nonNegativeInteger
+                        ] .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Wife
+:Wife rdf:type owl:Class ;
+      owl:equivalentClass [ owl:intersectionOf ( :person
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasHusband ;
+                                                   owl:someValuesFrom :husband
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :hasGen ;
+                                                   owl:hasValue :female
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] ;
+      rdfs:subClassOf :person .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child
+:child rdf:type owl:Class ;
+       rdfs:subClassOf :person .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#daughter
+:daughter rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :child
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :hasGen ;
+                                                       owl:hasValue :female
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf :child .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#father
+:father rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :parent
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasChild ;
+                                                     owl:someValuesFrom :child
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasGen ;
+                                                     owl:hasValue :male
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :parent .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#gen
+:gen rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Class ;
+                           owl:oneOf ( :female
+                                       :male
+                                     )
+                         ] .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#husband
+:husband rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :person
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasWife ;
+                                                      owl:someValuesFrom :Wife
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasGen ;
+                                                      owl:hasValue :male
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf :person ,
+                         [ owl:intersectionOf ( :person
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasWife ;
+                                                  owl:someValuesFrom :Wife
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasGen ;
+                           owl:hasValue :male
+                         ] .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#immature
+:immature rdf:type owl:Class ;
+          rdfs:subClassOf :person ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAge ;
+                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                 owl:onDatatype xsd:int ;
+                                                 owl:withRestrictions ( [ xsd:maxExclusive 18
+                                                                        ]
+                                                                      )
+                                               ]
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAge ;
+                            owl:maxCardinality "18"^^xsd:nonNegativeInteger
+                          ] .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#mother
+:mother rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :parent
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasChild ;
+                                                     owl:someValuesFrom :child
+                                                   ]
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasGen ;
+                                                     owl:hasValue :female
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :parent .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#onlyChild
+:onlyChild rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :child
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :hasSibling ;
+                                                        owl:cardinality "0"^^xsd:nonNegativeInteger
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :child ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasSibling ;
+                             owl:cardinality "0"^^xsd:nonNegativeInteger
+                           ] .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#parent
+:parent rdf:type owl:Class ;
+        rdfs:subClassOf :person .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person
+:person rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        rdfs:comment "منظور از خانواده، گروهی از افراد است که ..." .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#son
+:son rdf:type owl:Class ;
+     owl:equivalentClass [ owl:intersectionOf ( :child
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasGen ;
+                                                  owl:hasValue :male
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+     rdfs:subClassOf :child .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Ali
+:Ali rdf:type owl:NamedIndividual ,
+              :son ;
+     :hasFather :Mohsen ;
+     :hasMother :Narges ;
+     :birthDate "14/12/1385"^^xsd:dateTime ;
+     :hasAddress """اصفهان
+""" ;
+     :hasAge 14 ;
+     :hasCreditCard "false"^^xsd:boolean ;
+     rdfs:comment "فرزند کوچک خانواده" .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Maryam
+:Maryam rdf:type owl:NamedIndividual ,
+                 :daughter ;
+        :hasBrother :Ali .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Mohsen
+:Mohsen rdf:type owl:NamedIndividual ,
+                 :father ;
+        :hasDaughter :Maryam ;
+        :hasWife :Narges ;
+        :hasAge 50 ;
+        rdfs:comment "پدر خانواده" .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Narges
+:Narges rdf:type owl:NamedIndividual ,
+                 :mother ;
+        :hasChild :Maryam ;
+        rdfs:comment "مادر خانواده" .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#female
+:female rdf:type owl:NamedIndividual ,
+                 :gen .
+
+
+###  http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#male
+:male rdf:type owl:NamedIndividual ,
+               :gen .
+
+
+_:genid56 rdf:type [ rdf:type owl:Restriction ;
+                     owl:onProperty :hasDaughter ;
+                     owl:someValuesFrom :daughter
+                   ] ,
+                   [ rdf:type owl:Restriction ;
+                     owl:onProperty :hasSon ;
+                     owl:someValuesFrom :son
+                   ] .
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

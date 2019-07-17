@@ -1,0 +1,628 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAge"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasHusband"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#husband"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child"
+    }, {
+      "@id" : "_:genid14"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#female"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasGen"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#parent"
+    }, {
+      "@id" : "_:genid20"
+    }, {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#male"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasGen"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid4"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasChild"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#female"
+    }, {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#male"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+    }, {
+      "@id" : "_:genid29"
+    }, {
+      "@id" : "_:genid27"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#male"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasGen"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasWife"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Wife"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+    }, {
+      "@id" : "_:genid33"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasWife"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Wife"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#male"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasGen"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAge"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid39"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "http://www.w3.org/2001/XMLSchema#maxExclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "18"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "18"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "18"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAge"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#parent"
+    }, {
+      "@id" : "_:genid45"
+    }, {
+      "@id" : "_:genid43"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#female"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasGen"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasChild"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child"
+    }, {
+      "@id" : "_:genid49"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSibling"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "18"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAge"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "0"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSibling"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child"
+    }, {
+      "@id" : "_:genid54"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#male"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasGen"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "_:genid57", "_:genid58" ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasDaughter"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#daughter"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSon"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#son"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+    }, {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid8"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#female"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasGen"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Ali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#son" ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#birthDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "14/12/1385"
+  } ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAddress" : [ {
+    "@value" : "اصفهان\n"
+  } ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "14"
+  } ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasCreditCard" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasFather" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Mohsen"
+  } ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasMother" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Narges"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "فرزند کوچک خانواده"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Maryam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#daughter" ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasBrother" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Ali"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Mature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Mohsen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#father" ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "50"
+  } ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasDaughter" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Maryam"
+  } ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasWife" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Narges"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "پدر خانواده"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Narges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#mother" ],
+  "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasChild" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Maryam"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "مادر خانواده"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#Wife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#birthDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#daughter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#father",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#parent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#female",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#gen" ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#gen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasBrother",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSibling"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasChild",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasParent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasCreditCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "دارای کارت بانکی"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasDaughter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasChild"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasFather",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasParent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasGen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#gen"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasHusband",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasMother",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasParent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasParent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSibling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSister",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSibling"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasBrother"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasSon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasChild"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasWife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#parent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#parent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#hasHusband"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#husband",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  }, {
+    "@id" : "_:genid31"
+  }, {
+    "@id" : "_:genid35"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#immature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  }, {
+    "@id" : "_:genid36"
+  }, {
+    "@id" : "_:genid40"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#male",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#gen" ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#mother",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#parent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid41"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#onlyChild",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child"
+  }, {
+    "@id" : "_:genid51"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid47"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#parent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "منظور از خانواده، گروهی از افراد است که ..."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#son",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/satellite/ontologies/2014/9/untitled-ontology-4#child"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid52"
+  } ]
+} ]
